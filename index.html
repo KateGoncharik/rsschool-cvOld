@@ -9,22 +9,25 @@
         <header class="header">
             <h1 class="header-title"> Kate Goncharick</h1>
             <h2 class="header-subtitle">Web-developer</h2>
-            <img class="avatar" src="img/avatar.jpg" alt="avatar">
+            <div class="frame-for-photo">
+                <img class="frame" src="img/frame.png" alt="frame">
+                <img class="avatar" src="img/avatar.jpg" alt="avatar">
+            </div>   
         </header>
         <main class="container">
             <div class="content" >
                 <p><a id="top"></a></p>   
                 <div class="about-me-block">
-                    <h2 class="about-me-title">About me<a id="about-me"></a></h2>
-                    <p class="about-me-text">Hello! I'm 20 years old. I'm from Belarus, Minsk. I'm studying coding and programming for <b>half-a-year</b> now.</p>
+                    <h2 class="about-me-title">About me<a id="summary"></a></h2>
+                    <p class="about-me-text">Hello! I'm 20 years old. I'm from Minsk, Belarus. I'm studying coding and programming for half-a-year now.</p>
                 </div>
-                <div class="skills">
-                    <ol class="skills-list"> 
+                <div class="skills" id="skills">
+                    <ul class="skills-list"> 
                         <li>I have a good memory and quick mind.</li>
-                        <li>Basic HTML/CSS</li>
-                        <li>JS - 4 month, algorithms</li>
+                        <li>Basic HTML/CSS.</li>
+                        <li>JS - 4 month.</li>
                         <li>I have a plenty of time for studying</li>
-                    </ol>
+                    </ul>
                 </div>
                 <div class="code-example" id="code-example">
                     <h2 class="code-example-title">Code-example</h2>
@@ -54,9 +57,9 @@
             
             <aside class="sidebar">
                 <nav class="nav-block">
-                    <a class="nav-link" href="#about-me">About me</a>
+                    <a class="nav-link" href="#summary">About me</a>
                     <a class="nav-link" href="#code-example">Code-example</a>
-                    <a class="nav-link" href="#about-me">About me</a>
+                    <a class="nav-link" href="#skills">Skills</a>
                     <a class="nav-link" href="#about-me">About me</a>
                 </nav>
             </aside>

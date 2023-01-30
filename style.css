@@ -57,6 +57,10 @@ body {
 	box-shadow:  7px 1px var(--dark-blue);
 }
 
+.frame-for-photo {
+	width: 20%;
+}
+
 
 /******************MAIN************/
 
@@ -81,7 +85,11 @@ body {
 
 .about-me-block {
 	width: 100%;
+	margin-bottom: 20px;
+
 	background: linear-gradient( 195deg, #a0aedd, 60%, #6f6bcd);
+	color: #ebe0d5;
+	background: radial-gradient( at top, #a0aedd, 60%, #6f6bcd);
 	border-radius: 40px /40px;
 }
 
@@ -101,17 +109,17 @@ body {
 
 	margin: 0 auto;
 	
-	max-width: 50%;
-	/*height: 30%;*/
+	max-width: 70%;
 
-
-	border: 2px dashed #a3b6e4
+	background: radial-gradient( at top, #a0aedd, 60%, #6f6bcd);
+	border: 2px dashed #a3b6e4;
 }
 
 .skills-list {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     color: brown;
+	text-align: center;
 }
 .code-example-title {
 	font: italic bold 24px/1.2 Arial, sans-serif;
@@ -168,6 +176,7 @@ body {
 	width: 100%;
 	background: linear-gradient( 195deg, #a0aedd, 60%, #6f6bcd);
 	padding: 10%;
+	text-decoration: none;
 }
 
 .up-link {
@@ -186,5 +195,19 @@ flex
 текст не вылозит из блока обо мне
 
 меню не должно прыгать при изменении размера
+
+sections :
+profile - самая первая секция с именем, профессией, фотографией
+contacts (список контактов)
+summary (рассказ о себе)
+skills (перечень навыков)
+code (пример кода)
+courses (курсы в т.ч онлайн-курсы)
+projects (ссылки на выполненные проекты)
+education (образование)
+languages (языки в т.ч. уровень английского)
+Каждой секции укажите уникальный id. 
+
+! dark mode - https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
 
 */
