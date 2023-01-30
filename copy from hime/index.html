@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Curriculum Vitae</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header-title">Hello, my name is Kate Goncharick</h1>
+            <h2 class="header-subtitle">Nice to meet you!</h2>
+            <img class="avatar" src="img/avatar.jpg" alt="avatar">
+        </header>
+        <main class="content">
+            <h2>About me</h2>
+            <p class="about-me">I'm 20 years old. I'm from Belarus, Minsk. I'm studying coding and programming for <b>half-a-year</b> now.</p>
+            <div class="skills">
+                <ol class="skills-list"> 
+                    <li>I have a good memory</li>
+                    <li>Basic HTML/CSS</li>
+                    <li>JS - 4 month, algorithms</li>
+                    <li>I have a plenty of time for studying</li>
+                </ol>
+            </div>
+            <div class="code-example">
+
+                <code class="js-code"><pre>
+"use strict"
+function splt(str){
+    const symbols = str.split(" ");
+    const numb = +symbols[0];
+    const secondNumb = +symbols[2];
+    if (symbols[1] === "+"){
+    return numb + secondNumb;
+    }
+    if (symbols[1] === "-"){
+    return numb - secondNumb;
+    }
+};
+const str = "8 - 2";
+alert(splt(str));
+</pre></code>
+            </div>
+            
+            <a class="git-link" href="https://github.com/KateGoncharik">GitHub</a>
+        </main>
+    </body>
+</html>
