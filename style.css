@@ -5,6 +5,11 @@ html {
 
 :root  {
 		--dark-blue: #1a2641;
+		--main-title: #4854b2;
+		--container: #b3bfff;
+		--light-purple: #a0aedd;
+		--dark-purple: #6f6bcd;
+
 	}
 
 body {
@@ -13,62 +18,98 @@ body {
 	flex-direction: column;
 
 	width: 80%;
-	min-height: 100vw;
+	
 
 	font-family: Arial, sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
-	border: 10px groove #b0c2eb;
-	background: linear-gradient(to bottom,rgb(166 182 230), rgb(119 137 175));
-}
 	
+	background: linear-gradient(to bottom,rgb(198 208 238), rgb(151 176 229));
+}
+
+.main-title {
+
+	margin: 5px;
+	color: var(--main-title);
+	font-size: 30px;
+
+	text-align: center;
+}
 
 /******************Header*************/
 
 .header {
 	padding: 10px;
-	
-	
+	display: flex;
 }
 
-.header-title {
-	
+.greeting {
+	width: 55%;
+
+}
+
+.greeting-title {
+	font-family: Arial, sans-serif;
 	margin: 5px;
-	color: #ece0d6;
+	color: var(--main-title);
 	font-size: 30px;
-	
-	text-align: center;
 
+	text-align: center;
 }
 
-.header-subtitle {
-	margin: 0;
-	color: #BD6E11;
-	font-size: 24px;
-	text-align: center;
-	font-weight: 600;
-	/*background-color: var(--dark-blue);*/
-}
 
 .avatar {
-	width:  22%;
+	width: 100%;
 
 	border-radius: 100px;
 	box-shadow:  7px 1px var(--dark-blue);
 }
 
-.frame-for-photo {
+.avatar-block {
 	width: 20%;
+	
+}
+
+.frame {
+	position: relative;
+	width: 10%;
+    
+}
+
+/*.frame-block {
+	width: 100%;
+	height: 100px;
+	margin: 0 auto;
+	
+
+	background-image: url("img/frame.png");
+	opacity: 0.5;
+}
+*/
+.contacts {
+	
+	width: 80%;
+
+}
+
+.contacts-list {
+	list-style-type: none;
+
+	width: 100%;
 }
 
 
 /******************MAIN************/
 
 .container {
-	
-	display: flex;
     max-width: 1400px;
     margin: 0 auto;
+
+	display: flex;
+
+	background-color: var(--container);
+	border: 1px solid var(--container);
+    border-radius: 50px;
 }
 
 .content {
@@ -82,45 +123,49 @@ body {
 
 /******about-me***********/
 
-
-.about-me-block {
-	width: 100%;
+.about-and-skills-block {
+	display: flex;
+	justify-content: space-between;
 	margin-bottom: 20px;
-
-	background: linear-gradient( 195deg, #a0aedd, 60%, #6f6bcd);
-	color: #ebe0d5;
-	background: radial-gradient( at top, #a0aedd, 60%, #6f6bcd);
-	border-radius: 40px /40px;
 }
 
-.about-me-title {
-	padding-left: 50%;
+.about-me-block {
+	width: 45%;
+	padding-left: 5px;
+	color: #ebe0d5;
+	background: radial-gradient( at top, var(--light-purple), 60%, var(--dark-purple));
+	border: 2px ridge #717687;
+    border-radius: 30px;
 }
 
 .about-me-text {
-	padding: 20px;
     font-size: 20px;
 }
-/*/.about-me*/
+
 
 .skills{
-    font-style: italic;
-    font-size: 25px;
-
-	margin: 0 auto;
-	
-	max-width: 70%;
+	padding: 10px;
+	width: 45%;
 
 	background: radial-gradient( at top, #a0aedd, 60%, #6f6bcd);
-	border: 2px dashed #a3b6e4;
+	border: 2px ridge #717687;
+    border-radius: 30px;
 }
 
 .skills-list {
+	font-size: 20px;
+	font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: brown;
+    list-style-type: none;
+    color:  #ebe0d5;
 	text-align: center;
 }
+/********************code-and-projects**************************/
+.code-and-projects {
+	display: flex;
+	justify-content: space-between;
+}
+
 .code-example-title {
 	font: italic bold 24px/1.2 Arial, sans-serif;
 	background-color: #b56d00;
@@ -132,23 +177,54 @@ body {
 
 
 .code-example {
-	border: 18px groove #5959fa3f;
-    border-radius: 200px 20px;
-    background-color: #f1f4ff;
-    width: 600px;
-	margin: 0 auto;
+	width: 45%;
+	padding-left: 5px;
+	color:  #ebe0d5;
+	background: radial-gradient( at top, #a0aedd, 60%, #6f6bcd);
+	
+	border-width: 2px;
+	border-style: dotted none dotted none;
+	border-color:  #717687;
+    border-radius: 30px;
+    
+	
 }
 
 .js-code {
     margin: 0 auto;
 }
-
+/***************/
 .git-link {
     font-size: 24px;
 }
 
 .git-hub-photo {
 	width: 10%;
+}
+
+/********************projects****************/
+.projects {
+	width: 45%;
+	height: 200px;
+	padding: 10px;
+	
+	font-size: 22px;
+	text-align: center;
+
+	color:  #ebe0d5;
+	background: radial-gradient( at top, #a0aedd, 60%, #6f6bcd);
+	border-width: 2px;
+	border-style: dotted none dotted none;
+	border-color:  #717687;
+    border-radius: 30px;
+}
+
+.cat-page-link {
+	width: 20%;
+	background: linear-gradient( 195deg, #a0aedd, 60%, #6f6bcd);
+	padding: 3px;
+	margin: 20px;
+	text-decoration: none;
 }
 
 .sidebar {
@@ -161,7 +237,7 @@ body {
 
 .footer {
 	margin-top: 20px;
-	background-color: #b0c2eb;
+	
 	/*background-color: #a3b6e4;*/
 }
 
@@ -174,39 +250,36 @@ body {
 
 .nav-link {
 	width: 100%;
-	background: linear-gradient( 195deg, #a0aedd, 60%, #6f6bcd);
+	background: linear-gradient(to bottom,rgb(198 208 238), rgb(151 176 229));
 	padding: 10%;
 	text-decoration: none;
 }
 
 .up-link {
-	width: 10%;
+	width: 25%;
 }
 
-/*фотка и лицо  + заголовок переставить
+/*
 
+s
 
 переменные - цвета страницы
 
-ссылки- навигация в ездящем справа сайдбаре
-
 flex
-
-текст не вылозит из блока обо мне
 
 меню не должно прыгать при изменении размера
 
 sections :
-profile - самая первая секция с именем, профессией, фотографией
-contacts (список контактов)
-summary (рассказ о себе)
-skills (перечень навыков)
-code (пример кода)
+profile - самая первая секция с именем, профессией, фотографией +
+contacts (список контактов) +
+summary (рассказ о себе) +
+skills (перечень навыков) +
+code (пример кода) +
 courses (курсы в т.ч онлайн-курсы)
-projects (ссылки на выполненные проекты)
+projects (ссылки на выполненные проекты) +
 education (образование)
 languages (языки в т.ч. уровень английского)
-Каждой секции укажите уникальный id. 
+
 
 ! dark mode - https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
 

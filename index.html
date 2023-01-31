@@ -7,52 +7,70 @@
     </head>
     <body>
         <header class="header">
-            <h1 class="header-title"> Kate Goncharick</h1>
-            <h2 class="header-subtitle">Web-developer</h2>
-            <div class="frame-for-photo">
-                <img class="frame" src="img/frame.png" alt="frame">
+            <div class="avatar-block">
                 <img class="avatar" src="img/avatar.jpg" alt="avatar">
-            </div>   
+            </div>
+            <div class="greeting">  
+                <h1 class="greeting-title"> Hello! I am Kate Goncharick and I am web-developer.</h1>
+            </div>
+             
         </header>
         <main class="container">
             <div class="content" >
-                <p><a id="top"></a></p>   
-                <div class="about-me-block">
-                    <h2 class="about-me-title">About me<a id="summary"></a></h2>
-                    <p class="about-me-text">Hello! I'm 20 years old. I'm from Minsk, Belarus. I'm studying coding and programming for half-a-year now.</p>
-                </div>
-                <div class="skills" id="skills">
-                    <ul class="skills-list"> 
-                        <li>I have a good memory and quick mind.</li>
-                        <li>Basic HTML/CSS.</li>
-                        <li>JS - 4 month.</li>
-                        <li>I have a plenty of time for studying</li>
+                <!--<div class="frame-block"><p><a id="top"></a></p> </div> -->
+                <div class="contacts">
+                    <h3 class="main-title">Contacts</h3>
+                    <ul class="contacts-list">
+                        <li>E-mail: kategoncharik.artist@.com</li>
+                        <li><a class="git-link" href="https://github.com/KateGoncharik"><img class="git-hub-photo" src="img/git-hub.png" alt="git-hub"></a></li>
+                        <li>+3729888223</li>
+                        <li>@goncharikkatya</li>
                     </ul>
+                    
                 </div>
-                <div class="code-example" id="code-example">
-                    <h2 class="code-example-title">Code-example</h2>
-                    <pre>
-                        <code class="js-code">
-                            "use strict"
-                            function splt(str){
-                                const symbols = str.split(" ");
-                                const numb = +symbols[0];
-                                const secondNumb = +symbols[2];
-                                if (symbols[1] === "+"){
-                                return numb + secondNumb;
-                                }
-                                if (symbols[1] === "-"){
-                                return numb - secondNumb;
-                                }
-                            };
-                            const str = "8 - 2";
-                            alert(splt(str));
-                        </code>
-                    </pre>
-                </div>
-
-                <a class="git-link" href="https://github.com/KateGoncharik"><img class="git-hub-photo" src="img/git-hub.png" alt="git-hub"></a>
-                <p><a href="#top"><img class="up-link" src="img/arrow-up.png" alt="up"></a></p>
+                <div class="about-and-skills-block">
+                    <div class="about-me-block">
+                        <h2 class="main-title">About me<a id="summary"></a></h2>
+                        <p class="about-me-text">Hello! I'm 20 years old. I'm from Minsk, Belarus. I'm studying coding and programming for half-a-year now.</p>
+                    </div>
+                    <div class="skills" id="skills">
+                        <h2 class="main-title">Skills I have</h2>
+                        <ul class="skills-list"> 
+                            <li>I have a good memory and quick mind.</li>
+                            <li>I have a plenty of time for studying.</li>
+                            <li>Basic HTML/CSS.</li>
+                            <li>JS - 4 month.</li>
+                            
+                        </ul>
+                    </div>
+                </div>  
+                <div class="code-and-projects">
+                    <div class="code-example" id="code-example">
+                        <h2 class="main-title">Code-example</h2>
+                        <pre>
+                            <code class="js-code">
+    "use strict"
+    function splt(str){
+        const symbols = str.split(" ");
+        const numb = +symbols[0];
+        const secondNumb = +symbols[2];
+        if (symbols[1] === "+"){
+        return numb + secondNumb;
+        }
+        if (symbols[1] === "-"){
+        return numb - secondNumb;
+        }
+    };
+    const str = "8 - 2";
+    alert(splt(str));
+                            </code>
+                        </pre>
+                    </div> 
+                    <div class="projects">
+                        <h3 class="main-title">Projects</h3>
+                        <p>My First web-site.<a class="cat-page-link" href="https://kategoncharik.github.io/cat-page/" >Cat-page</a> </p>
+                    </div>
+                 </div>
             </div>
             
             <aside class="sidebar">
@@ -61,11 +79,12 @@
                     <a class="nav-link" href="#code-example">Code-example</a>
                     <a class="nav-link" href="#skills">Skills</a>
                     <a class="nav-link" href="#about-me">About me</a>
+                    <a class="nav-link" href="#top"><img class="up-link" src="img/arrow-up.png" alt="up"> Go up </a>
                 </nav>
             </aside>
             
         </main>
-        <footer class="footer"><p>I am a footer, I am a footer
-            2023
-        </p></footer>
+        <footer class="footer">
+            
+        </footer>
     </body>
