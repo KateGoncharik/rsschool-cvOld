@@ -78,13 +78,13 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
 	
 }
 
-.frame {
+/*.frame {
 	position: relative;
 	width: 10%;
     
 }
 
-/*.frame-block {
+.frame-block {
 	width: 100%;
 	height: 100px;
 	margin: 0 auto;
@@ -97,14 +97,12 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
 .contacts {
 	
 	width: 100%;
-	margin-bottom: 20px;
-	background: radial-gradient( at top, var(--light-purple), 80%, var(--dark-purple));
-	border: 1px ridge #717687;
-    border-radius: 30px;
-
+	
 }
 
-
+.contacts-icon {
+	width: 5%;
+}
 
 .contacts-list {
 	list-style-type: none;
@@ -152,11 +150,6 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
     border-radius: 30px;
 }
 
-.about-me-block p:hover {
-	border: 1px ridge #3f4f85;
-	border-radius: 30px;
-}
-
 .about-me-text {
     font-size: 18px;
 }
@@ -168,12 +161,6 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
 
 	background: radial-gradient( at top, #a0aedd, 60%, #6f6bcd);
 	border: 1px ridge #717687;
-    border-radius: 30px;
-}
-	
-
-.skills ul:hover {
-	border: 1px ridge #3f4f85;
     border-radius: 30px;
 }
 
@@ -215,13 +202,6 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
     border-radius: 30px;
 }
 
-.code-example pre:hover {
-	border-width: 1px;
-	border-style: dotted none dotted none;
-	border-color:  #3f4f85;
-	border-radius: 30px;
-}
-
 .js-code {
     margin: 0 auto;
 }
@@ -248,13 +228,6 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
 	border-width: 1px;
 	border-style: dotted none dotted none;
 	border-color:  #717687;
-    border-radius: 30px;
-}
-
-.projects p:hover {
-	border-width: 1px;
-	border-style: dotted none dotted none;
-	border-color:  #3f4f85;
     border-radius: 30px;
 }
 
@@ -290,12 +263,6 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
     border-radius: 30px;
 }
 
-.courses-education p:hover {
-	border-width: 1px;
-	border-style: dotted none dotted none;
-	border-color:  #3f4f85;
-    border-radius: 30px;
-}
 
 .languages {
 	width: 45%;
@@ -313,12 +280,6 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
     border-radius: 30px;
 
 }
-.languages p:hover {
-	border-width: 1px;
-	border-style: dotted none dotted none;
-	border-color:  #3f4f85;
-    border-radius: 30px;
-}
 
 .sidebar {
 	/*background-color: #e2ccc8;*/
@@ -330,7 +291,6 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
 
 .footer {
 	width: 100%;
-	height: 100px;
 	margin-top: 20px;
 }
 
@@ -345,18 +305,33 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
 	flex-wrap: wrap; 
 }
 
+.nav-list {
+	display: flex;
+	flex-direction: column;
+
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	line-height: 2;
+}
+
 .nav-link {
 	width: 100%;
 	background: linear-gradient(to bottom,rgb(198 208 238), rgb(151 176 229));
-	padding: 10%;
+	padding: 5%;
 	text-decoration: none;
 }
+
+
 
 .up-link {
 	width: 25%;
 }
 
 /*
+footer-contacts
+width - change with photo?
+
 adaptation
 меню не должно прыгать при изменении размера
 
