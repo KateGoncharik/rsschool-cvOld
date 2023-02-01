@@ -1,27 +1,104 @@
 <!DOCTYPE html> 
-<html>
+<html lang="ru">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="styles.css" />
-        <title>Curriculum Vitae</title>
+        <link rel="stylesheet" href="style.css" />
+        <title>CV Goncharick Kate</title>
     </head>
     <body>
         <header class="header">
-            <h1 class="header-title">Hello, my name is Kate Goncharick</h1>
-            <h2 class="header-subtitle">Nice to meet you!</h2>
-        </header>
-        <main class="content">
-            <h2>About me</h2>
-            <p class="about-me">I'm almost 20 years old. I'm from Belarus, Minsk. I'm studying coding and programming for <b>half-a-year</b> now.</p>
-            <div class="skills">
-                <ol class="skills-list"> 
-                    <li>I have a good memory</li>
-                    <li>Basic HTML/CSS</li>
-                    <li>JS - 4 month, algorithms</li>
-                    <li>I have a plenty of time for studying</li>
-                </ol>
+            <div class="avatar-block">
+                <img class="avatar" src="img/avatar.jpg" alt="avatar">
             </div>
-            <a class="git-link" href="https://github.com/KateGoncharik">GitHub</a>
+            <div class="greeting">  
+                <h1 class="greeting-title"> Hello! I am Kate Goncharick and I am web-developer.</h1>
+            </div>
+             
+        </header>
+        <main class="container">
+            <div class="content" >
+                <!--<div class="frame-block"><p><a id="top"></a></p> </div> -->
+                <div class="contacts" id="contacts">
+                    <h3 class="main-title">Contacts</h3>
+                    <ul class="contacts-list">
+                        <li>E-mail: kategoncharik.artist@.com</li>
+                        <li><a class="git-link" href="https://github.com/KateGoncharik"><img class="git-hub-photo" src="img/git-hub.png" alt="git-hub"></a></li>
+                        <li>+3729888223</li>
+                        <li>@goncharikkatya</li>
+                    </ul>
+                    
+                </div>
+                <div class="about-and-skills-block">
+                    <div class="about-me-block" id="about-me">
+                        <h2 class="main-title">About me<a id="summary"></a></h2>
+                        <p class="about-me-text">Hello! I'm 20 years old. I'm from Minsk, Belarus. I'm studying coding and programming for half-a-year now.</p>
+                    </div>
+                    <div class="skills" id="skills">
+                        <h2 class="main-title">Skills I have</h2>
+                        <ul class="skills-list"> 
+                            <li>I have a good memory and quick mind.</li>
+                            <li>I have a plenty of time for studying.</li>
+                            <li>Basic HTML/CSS.</li>
+                            <li>JS - 4 month.</li>
+                            
+                        </ul>
+                    </div>
+                </div>  
+                <div class="code-and-projects">
+                    <div class="projects" id="projects">
+                        <h3 class="main-title">Projects</h3>
+                        <p>My First web-site.<a class="cat-page-link" href="https://kategoncharik.github.io/cat-page/" >Cat-page</a> </p>
+                    </div>
+                    <div class="code-example" id="code-example">
+                        <h2 class="main-title">Code-example</h2>
+                        <pre>
+                            <code class="js-code">
+    "use strict"
+    function splt(str){
+        const symbols = str.split(" ");
+        const numb = +symbols[0];
+        const secondNumb = +symbols[2];
+        if (symbols[1] === "+"){
+        return numb + secondNumb;
+        }
+        if (symbols[1] === "-"){
+        return numb - secondNumb;
+        }
+    };
+    const str = "8 - 2";
+    alert(splt(str));
+                            </code>
+                        </pre>
+                    </div> 
+                 </div>
+                 <div class="courses-education-languages">
+                    <div class="courses-education" id="courses-education">
+                        <h3 class="main-title">My education</h3>
+                        <p class="courses-education-text">I've been studying on <a href="https://brainscloud.ru/">Dmitry Valok's online-corses</a>.
+                             Also I made it till the middle of <a href="https://learn.javascript.ru/">Learn javascript courses. </a> </p>
+                    </div>
+                    <div class="languages" id="languages">
+                        <h3 class="main-title">Languages I use</h3>
+                        <p>I freely speak 3 languages: Russian, Belarussian, English (B2).</p>
+                    </div>
+                 </div>
+            </div>
+            
+            <aside class="sidebar">
+                <nav class="nav-block">
+                    <a class="nav-link" href="#contacts">Contacts</a>
+                    <a class="nav-link" href="#summary">About me</a>
+                    <a class="nav-link" href="#code-example">Code-example</a>
+                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#projects">My projects</a>
+                    <a class="nav-link" href="#courses-education">Education and courses</a>
+                    <a class="nav-link" href="#languages">Languages</a>
+                    <a class="nav-link" href="#top"><img class="up-link" src="img/arrow-up.png" alt="up"> Go up </a>
+                </nav>
+            </aside>
+            
         </main>
+        <footer class="footer">
+            
+        </footer>
     </body>
-</html>
