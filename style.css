@@ -9,8 +9,8 @@ html {
 		--container: #b3bfff;
 		--light-purple: #a0aedd;
 		--dark-purple: #6f6bcd;
-		--bg-first: rgb(198 208 238);
-		--bg-second: rgb(151 176 229);
+		--bg-first: rgb(244 245 249);
+		--bg-second: rgb(204 223 243);
 
 	}
 
@@ -60,7 +60,7 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
 	font-family: Arial, sans-serif;
 	margin: 5px;
 	color: var(--main-title);
-	font-size: 26px;
+	font-size: 30px;
 
 	text-align: center;
 }
@@ -110,6 +110,10 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
 	width: 100%;
 }
 
+.contacts-link {
+	text-decoration: none;
+}
+
 
 /******************MAIN************/
 
@@ -118,6 +122,7 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
     margin: 0 auto;
 
 	display: flex;
+	flex-direction: column;
 
 	background-color: var(--container);
 	border: 1px solid var(--container);
@@ -126,10 +131,6 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
 
 .content {
 	padding: 20px;
-
-	/*display: flex;
-    justify-content: center;
-    flex-wrap: wrap; */
 
 }
 
@@ -233,9 +234,7 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
 
 .cat-page-link {
 	width: 20%;
-	background: linear-gradient( 195deg, #a0aedd, 60%, #6f6bcd);
 	padding: 3px;
-	margin: 20px;
 	text-decoration: none;
 }
 
@@ -329,8 +328,10 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
 }
 
 /*
-footer-contacts
-width - change with photo?
+footer- stick to the body
+
+
+
 
 adaptation
 меню не должно прыгать при изменении размера
