@@ -6,28 +6,18 @@
         <title>CV Goncharick Kate</title>
     </head>
     <body>
-        <header class="header">
-            <div class="avatar-block">
-                <img class="avatar" src="img/avatar.jpg" alt="avatar">
-            </div>
-            <div class="greeting">  
-                <h1 class="greeting-title"> Hello! I am Kate Goncharick and I am web-developer.</h1>
-            </div>
-             
-        </header>
         <main class="container">
+            <header class="header">
+                <div class="avatar-block">
+                    <img class="avatar" src="img/avatar.jpg" alt="avatar">
+                </div>
+                <div class="greeting">  
+                    <h1 class="greeting-title"> Hello! I am Kate Goncharick <br> Web-developer.</h1>
+                </div>
+                 
+            </header>
             <div class="content" >
                 <!--<div class="frame-block"><p><a id="top"></a></p> </div> -->
-                <div class="contacts" id="contacts">
-                    <h3 class="main-title">Contacts</h3>
-                    <ul class="contacts-list">
-                        <li>E-mail: kategoncharik.artist@.com</li>
-                        <li><a class="git-link" href="https://github.com/KateGoncharik"><img class="git-hub-photo" src="img/git-hub.png" alt="git-hub"></a></li>
-                        <li>+3729888223</li>
-                        <li>@goncharikkatya</li>
-                    </ul>
-                    
-                </div>
                 <div class="about-and-skills-block">
                     <div class="about-me-block" id="about-me">
                         <h2 class="main-title">About me<a id="summary"></a></h2>
@@ -46,14 +36,13 @@
                 </div>  
                 <div class="code-and-projects">
                     <div class="projects" id="projects">
-                        <h3 class="main-title">Projects</h3>
+                        <h2 class="main-title">Projects</h2>
                         <p>My First web-site.<a class="cat-page-link" href="https://kategoncharik.github.io/cat-page/" >Cat-page</a> </p>
                     </div>
                     <div class="code-example" id="code-example">
                         <h2 class="main-title">Code-example</h2>
                         <pre>
                             <code class="js-code">
-    "use strict"
     function splt(str){
         const symbols = str.split(" ");
         const numb = +symbols[0];
@@ -73,12 +62,12 @@
                  </div>
                  <div class="courses-education-languages">
                     <div class="courses-education" id="courses-education">
-                        <h3 class="main-title">My education</h3>
+                        <h2 class="main-title">My education</h2>
                         <p class="courses-education-text">I've been studying on <a href="https://brainscloud.ru/">Dmitry Valok's online-corses</a>.
                              Also I made it till the middle of <a href="https://learn.javascript.ru/">Learn javascript courses. </a> </p>
                     </div>
                     <div class="languages" id="languages">
-                        <h3 class="main-title">Languages I use</h3>
+                        <h2 class="main-title">Languages I use</h2>
                         <p>I freely speak 3 languages: Russian, Belarussian, English (B2).</p>
                     </div>
                  </div>
@@ -86,21 +75,43 @@
             
             <aside class="sidebar">
                 <nav class="nav-block">
-                    <a class="nav-link" href="#contacts">Contacts</a>
-                    <a class="nav-link" href="#summary">About me</a>
-                    <a class="nav-link" href="#code-example">Code-example</a>
-                    <a class="nav-link" href="#skills">Skills</a>
-                    <a class="nav-link" href="#projects">My projects</a>
-                    <a class="nav-link" href="#courses-education">Education and courses</a>
-                    <a class="nav-link" href="#languages">Languages</a>
-                    <a class="nav-link" href="#top"><img class="up-link" src="img/arrow-up.png" alt="up"> Go up </a>
+                    <ul class="nav-list">
+                       <li> <a class="nav-link" href="#contacts">Contacts</a></li>
+                       <li> <a class="nav-link" href="#summary">About me</a></li>
+                       <li> <a class="nav-link" href="#code-example">Code-example</a></li>
+                       <li> <a class="nav-link" href="#skills">Skills</a></li>
+                       <li> <a class="nav-link" href="#projects">My projects</a></li>
+                       <li> <a class="nav-link" href="#courses-education">Education and courses</a></li>
+                       <li> <a class="nav-link" href="#languages">Languages</a></li>
+                       <li> <a class="nav-link" href="#top"><img class="up-link" src="img/arrow-up.png" alt="up"> Go up </a></li>
+                    </ul>
                 </nav>
             </aside>
             
         </main>
         <footer class="footer">
-            <a href="https://rs.school/js/" ><img class="rsschool" src="img/rs_school_js.svg" alt="rsschool"></a>
-            <a class="git-link" href="https://github.com/KateGoncharik"><img class="git-hub-photo" src="img/git-hub.png" alt="git-hub"></a>
+            <section class="contacts" id="contacts">
+                <ul class="contacts-list">
+                    <li><img class="contacts-icon" src="img/e-mail.png"><a class="contacts-link" href="mailto:kategoncharik.artist@gmail.com">kategoncharik.artist@gmail.com</a></li>
+                    <li><img class="contacts-icon" src="img/phone.png"><a class="contacts-link" href="tel:3752978563">3752978563</a></li>
+                    <li><img class="contacts-icon" src="img/tg.png">@goncharickkatya</li>
+                    <li><a href="https://rs.school/js/" ><img class="rsschool" src="img/rs_school_js.svg" alt="rsschool"></a></li>
+                    <li><a class="git-link" href="https://github.com/KateGoncharik"><img class="git-hub-photo" src="img/git-hub.png" alt="git-hub"></a></li>
+                </ul>
+            
+            </section>
+            
             <p>2023</p>
         </footer>
     </body>
+
+<!--<section class="contacts" id="contacts">
+        <ul class="contacts-list">
+            <li><img class="contacts-icon" src="img/e-mail.png">E-mail: kategoncharik.artist@.com</li>
+            <li><img class="contacts-icon" src="img/phone.png">+3753355485</li>
+            <li><img class="contacts-icon" src="img/tg.png">@goncharikkatya</li>
+            <li><a href="https://rs.school/js/" ><img class="rsschool" src="img/rs_school_js.svg" alt="rsschool"></a></li>
+            <li><a class="git-link" href="https://github.com/KateGoncharik"><img class="git-hub-photo" src="img/git-hub.png" alt="git-hub"></a></li>
+        </ul>
+    
+    </section> -->
