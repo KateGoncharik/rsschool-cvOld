@@ -1,0 +1,103 @@
+html {
+    font-family: Inika, Inter;
+}
+
+:root  {
+    --green: #499A18;
+    --orange: #E06733;
+    --light-gray: #717171;
+    --dark-grey: #636060;
+    --Bg-section: #EDF2EC;
+    --links-nav: #010201;
+}
+
+body {
+    width: 1440px;
+}
+
+header {
+    height: 135px;
+    background-color: var(--Bg-section);
+}
+
+.logo {
+    width: 79px;
+    height: 21px;
+}
+
+.welcome {
+    height: 532px;
+    background-color: var(--Bg-section);
+}
+
+.welcome-inner-section {
+    width: 1222px;
+    height: 407px;
+}
+
+.leafs {
+    width: 448px;
+    height: 407px;
+}
+
+.welcome-text-block {
+    width: 549px;
+    height: 340px;
+}
+.welcome-text-block > p {
+    width: 525px;
+    height: 105px;
+}
+
+.plants {
+    color: var(--green);
+}
+
+.about {
+    background-color: #FFFFFF;
+    height: 666px;
+}
+
+.about-us-section {
+    width: 1222px;
+    height: 479px;
+}
+
+.about-us-text-section {
+    width: 605px;
+    height: 350px;
+}
+
+.about-us-text-section > h2 {
+    width: 463px;
+    height: 102px;
+}
+
+.about-us-text {
+    width: 605px;
+    height: 350px;
+}
+
+.houseplant {
+    width: 464px;
+    height: 479px;
+}
+.service {
+   height: 1300px;
+   background-color: var(--Bg-section); 
+}
+
+.prices {
+    height: 560px;
+    background-color: #FFFFFF;
+}
+
+.contacts {
+    height: 550px;
+    background-color: var(--Bg-section);
+}
+
+footer {
+    height: 130px;
+    background-color: #FFFFFF;
+}
