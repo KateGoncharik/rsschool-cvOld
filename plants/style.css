@@ -12,41 +12,185 @@ html {
 }
 
 body {
+    position: relative;
     width: 1440px;
+    height: 3870px;
+    
 }
 
 header {
-    height: 135px;
+    position: absolute;
+    width: 1440px;
+    height: 134px;
+    left: 0px;
+    top: 0px;
     background-color: var(--Bg-section);
+}
+
+.navbar {
+    position: absolute;
+    width: 1220px;
+    height: 50px;
+    left: 111px;
+    top: 42px;
+}
+
+.nav {
+    position: absolute;
+    width: 452px;
+    height: 50px;
+    left: 879px;
+    top: 42px;
+}
+
+#home {
+    position: absolute;
+    height: 50px;
+    left: 61.04%;
+    right: 35.9%;
+    top: 42px;
+    
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+#about-us {
+    position: absolute;
+    height: 50px;
+    left: 67.29%;
+    right: 28.06%;
+    top: 42px;
+
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+#service {
+    position: absolute;
+    height: 50px;
+    left: 75.14%;
+    right: 21.04%;
+    top: 42px;
+    
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+#price {
+    position: absolute;
+    height: 50px;
+    left: 82.15%;
+    right: 15.21%;
+    top: 42px;
+    
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+#contacts {
+    position: absolute;
+    height: 50px;
+    left: 87.99%;
+    right: 7.57%;
+    top: 42px;
+    
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
 }
 
 .logo {
-    width: 79px;
-    height: 21px;
+    position: absolute;
+    width: 79.17px;
+    height: 21.04px;
+    left: 111px;
+    top: 52px;
+
 }
 
 .welcome {
+    position: absolute;
     height: 532px;
+    width: 1440px;
     background-color: var(--Bg-section);
+    left: 0;
+    top: 134px;
 }
 
 .welcome-inner-section {
+    position: absolute;
     width: 1222px;
-    height: 407px;
+    height: 407.36px;
+    left: 109px;
+    top: 62px;
+    /*border: 2px solid var(--orange); */
+
 }
 
 .leafs {
-    width: 448px;
-    height: 407px;
+    position: absolute;
+    width: 448.8px;
+    height: 407.36px;
+    left: 109px;
+    top: 62px;
 }
 
 .welcome-text-block {
+    position: absolute;
     width: 549px;
     height: 340px;
+    left: 782px;
+    top: 98px;
 }
-.welcome-text-block > p {
-    width: 525px;
+
+.welcome-subtitle {
+    position: absolute;
+    width: 549px;
+    height: 101px;
+    left: 782px;
+    top: 98px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+}
+
+.btn-learn-more {
+    position: absolute;
+    width: 158px;
+    height: 44px;
+    left: 782px;
+    top: 394px;
+}
+
+.welcome-text {
+    position: absolute;
+    width: 525.44px;
     height: 105px;
+    left: 782px;
+    top: 241px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
 }
 
 .plants {
@@ -55,37 +199,152 @@ header {
 
 .about {
     background-color: #FFFFFF;
+    position: absolute;
+    width: 1440px;
     height: 666px;
+    left: 0px;
+    top: 666px;
+
 }
 
 .about-us-section {
     width: 1222px;
     height: 479px;
+    position: absolute;
+    top: 93px;
+    left: 109px;
 }
 
 .about-us-text-section {
     width: 605px;
     height: 350px;
+    position: absolute;
+    top: 161px;
+    left: 109px;
 }
 
-.about-us-text-section > h2 {
+.about-us-title {
     width: 463px;
     height: 102px;
+    position: absolute;
+    top: 161px;
+    left: 109px;
 }
 
 .about-us-text {
     width: 605px;
     height: 350px;
+    position: absolute;
+    top: 303px;
+    left: 109px;
 }
 
 .houseplant {
     width: 464px;
     height: 479px;
+    position: absolute;
+    top: 93px;
+    left: 867px;
 }
 .service {
-   height: 1300px;
+    position: absolute;
+    width: 1440px;
+    height: 1300px;
+    left: 0px;
+    top: 1332px;
    background-color: var(--Bg-section); 
 }
+
+.services-content {
+    position: absolute;
+    width: 1007px;
+    height: 94px;
+    left: 109px;
+    top: 40px;
+}
+
+.services {
+    position: absolute;
+    width: 1222px;
+    height: 955px;
+    left: 109px;
+    top: 224px;
+}
+
+.service-item-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+#first {
+    position: absolute;
+    width: 329px;
+    height: 350px;
+    left: 110px;
+    top: 224px;
+    
+    background: url(pexels-frank-meriño-3612089.jpg);
+    border-radius: 20px 20px 0px 0px;
+}
+
+#second {
+
+    position: absolute;
+    width: 329px;
+    height: 350px;
+    left: 556px;
+    top: 224px;
+    
+    background: url(pexels-gary-barnes-6231690.jpg);
+    border-radius: 20px 20px 0px 0px;
+}
+#third {
+    position: absolute;
+    width: 329px;
+    height: 350px;
+    left: 1002px;
+    top: 224px;
+    
+    background: url(pexels-tima-miroshnichenko-6508837.jpg);
+    border-radius: 20px 20px 0px 0px;
+}
+
+#forth {
+    position: absolute;
+    width: 329px;
+    height: 350px;
+    left: 110px;
+    top: 729px;
+    
+    background: url(pexels-gary-barnes-6231849.jpg);
+    border-radius: 20px 20px 0px 0px;
+}
+
+#fifth {
+    position: absolute;
+    width: 329px;
+    height: 350px;
+    left: 556px;
+    top: 729px;
+    
+    background: url(pexels-gary-barnes-6231721.jpg);
+    border-radius: 20px 20px 0px 0px;
+}
+
+#sixth {
+    position: absolute;
+    width: 329px;
+    height: 350px;
+    left: 1002px;
+    top: 729px;
+    
+    background: url(pexels-teona-swift-6912841.jpg);
+    border-radius: 20px 20px 0px 0px;
+}
+
 
 .prices {
     height: 560px;
