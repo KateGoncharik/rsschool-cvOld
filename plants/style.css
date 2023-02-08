@@ -15,6 +15,7 @@ body {
     position: relative;
     width: 1440px;
     height: 3870px;
+    margin: auto;
     
 }
 
@@ -150,14 +151,16 @@ header {
 }
 
 .welcome-text-block {
-    position: absolute;
+   /* position: absolute;*/
     width: 549px;
     height: 340px;
     left: 782px;
     top: 98px;
+
+   
 }
 
-.welcome-subtitle {
+.welcome-title {
     position: absolute;
     width: 549px;
     height: 101px;
@@ -208,11 +211,11 @@ header {
 }
 
 .about-us-section {
+    position: absolute;
     width: 1222px;
     height: 479px;
-    position: absolute;
-    top: 93px;
     left: 109px;
+    top: 93px;
 }
 
 .about-us-text-section {
@@ -226,25 +229,32 @@ header {
 .about-us-title {
     width: 463px;
     height: 102px;
-    position: absolute;
+    /*position: absolute;
     top: 161px;
-    left: 109px;
+    left: 109px;*/
 }
 
 .about-us-text {
+    
     width: 605px;
-    height: 350px;
-    position: absolute;
-    top: 303px;
+    height: 208px;
+    /*position: absolute;
     left: 109px;
+    top: 303px;*/
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 .houseplant {
+    position: absolute;
     width: 464px;
     height: 479px;
-    position: absolute;
-    top: 93px;
     left: 867px;
+    top: 93px;
 }
 .service {
     position: absolute;
@@ -252,7 +262,7 @@ header {
     height: 1300px;
     left: 0px;
     top: 1332px;
-   background-color: var(--Bg-section); 
+    background-color: var(--Bg-section); 
 }
 
 .services-content {
@@ -261,6 +271,30 @@ header {
     height: 94px;
     left: 109px;
     top: 40px;
+}
+
+.services-title {
+    position: absolute;
+    width: 306px;
+    height: 94px;
+    left: 109px;
+    top: 40px;
+    
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: var(--green);
+    
+}
+
+.services-btns {
+    position: absolute;
+    width: 559px;
+    height: 50px;
+    left: 557px;
+    top: 69px;
 }
 
 .services {
