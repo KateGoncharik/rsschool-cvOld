@@ -40,57 +40,37 @@ header {
     height: 50px;
     display: flex;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;;
 
 }
 
-#home {
-    height: 50px;
-    
+.nav-list {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 2px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.nav-list-item {
+    display: inline;
+}
+
+.nav-link {
     font-family: 'Inika';
     font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+.home {
     font-weight: 700;
-    font-size: 16px;
-    line-height: 50px;
-}
-
-#about-us {
-    height: 50px;
-
-    font-family: 'Inika';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 50px;
-}
-
-#service {
-    height: 50px;
-
-    font-family: 'Inika';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 50px;
-}
-
-#price {
-    height: 50px;
-
-    font-family: 'Inika';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 50px;
-}
-
-#contacts {
-    height: 50px;
-    
-    font-family: 'Inika';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 50px;
+    color: var(--orange);
 }
 
 .logo {
@@ -170,11 +150,15 @@ header {
 .about-us-text-section {
     width: 605px;
     height: 350px;
+    padding: 68px 0 0;
 }
 
 .about-us-title {
     width: 463px;
     height: 102px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
 }
 
 .about-us-text {
@@ -247,7 +231,6 @@ header {
     width: 329px;
     height: 350px;
     
-    background: url(pexels-frank-meriño-3612089.jpg);
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -255,14 +238,12 @@ header {
     width: 329px;
     height: 350px;
 
-    background: url(pexels-gary-barnes-6231690.jpg);
     border-radius: 20px 20px 0px 0px;
 }
 #third {
     width: 329px;
     height: 350px;
 
-    background: url(pexels-tima-miroshnichenko-6508837.jpg);
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -270,7 +251,6 @@ header {
     width: 329px;
     height: 350px;
     
-    background: url(pexels-gary-barnes-6231849.jpg);
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -278,7 +258,6 @@ header {
     width: 329px;
     height: 350px;
     
-    background: url(pexels-gary-barnes-6231721.jpg);
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -286,7 +265,6 @@ header {
     width: 329px;
     height: 350px;
     
-    background: url(pexels-teona-swift-6912841.jpg);
     border-radius: 20px 20px 0px 0px;
 }
 
