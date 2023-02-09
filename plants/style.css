@@ -274,6 +274,54 @@ header {
     background-color: #FFFFFF;
 }
 
+.prices-wrapper {
+    width: 1222px;
+    height: 405px;
+    padding: 40px 109px 115px 109px;
+}
+
+.prices-radio-section {
+    width: 332px;
+    height: 391.01px;
+}
+
+.prices-radio-box {
+    width: 332px;
+    height: 282.01px;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+}
+
+.prices-form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 214.01px;
+}
+
+/*#standart, #pro-care, #basics {
+    width: 250px;
+    height: 50px;
+}*/
+
+.form-item {
+    width: 250px;
+    height: 50px;
+    background-color: var(--Bg-section);
+    border: 2px #EDF2EC;
+    border-radius: 20px;
+    margin: 16px;
+}
+
+.prices-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+}
+
 .contacts {
     height: 550px;
     background-color: var(--Bg-section);
