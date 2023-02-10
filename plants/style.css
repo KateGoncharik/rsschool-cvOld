@@ -24,7 +24,6 @@ header {
     left: 0px;
     top: 0px;
     background-color: var(--Bg-section);
-    
 }
 
 .navbar {
@@ -278,39 +277,13 @@ header {
     width: 1222px;
     height: 405px;
     padding: 40px 109px 115px 109px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.prices-radio-section {
+.prices-first {
     width: 332px;
     height: 391.01px;
-}
-
-.prices-radio-box {
-    width: 332px;
-    height: 282.01px;
-    border: 1px solid #E3E1D5;
-    border-radius: 20px;
-}
-
-.prices-form {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    height: 214.01px;
-}
-
-/*#standart, #pro-care, #basics {
-    width: 250px;
-    height: 50px;
-}*/
-
-.form-item {
-    width: 250px;
-    height: 50px;
-    background-color: var(--Bg-section);
-    border: 2px #EDF2EC;
-    border-radius: 20px;
-    margin: 16px;
 }
 
 .prices-title {
@@ -320,6 +293,92 @@ header {
     font-size: 40px;
     line-height: 48px;
     color: #000000;
+}
+
+.prices-middle {
+    width: 332px;
+    height: 282.01px;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prices-accordion {
+    width: 250px;
+    height: 214.01px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.accordion-item {
+    width: 250px;
+    height: 50px;
+    background-color: var(--Bg-section);
+    border: 2px #EDF2EC;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around
+    
+}
+
+.acc-item-title {
+    width: 100px;
+    height: 18px;
+
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    
+}
+
+.acc-dot {
+    width: 16px;
+    height: 16px;
+    padding-top: 8%;
+}
+
+.prices-second {
+    width: 452px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.prices-second-title {
+    width: 452px;
+    height: 103px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: end;
+}
+
+.gardeners {
+    color: var(--green);
+}
+
+.btn-contact-us {
+    width: 162px;
+    height: 50px;
+    border: 1px solid var(--orange);
+    border-radius: 5px;
+    background-color: #fff;
+    color: var(--orange);
+    margin-bottom: 18px;
+}
+
+.leaves-prices {
+    width: 152px;
+    height: 175px;
+    align-self:flex-end;
+    margin-top: 18px;
 }
 
 .contacts {
