@@ -116,6 +116,9 @@ header {
     width: 549px;
     height: 340px;
     padding-top: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 
@@ -228,14 +231,13 @@ header {
     background-color: var(--Bg-section); 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .services-content {
     width: 1007px;
     height: 94px;
-    padding: 40px 432px 90px 109px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -295,9 +297,13 @@ header {
 } 
 
 .service-item-text-block {
+    width: 330px;
+    height: 100px;
     border: 1px solid var(--border-gray);
     border-radius: 0 0 20px 20px;
-    margin-top: -5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .service-item-title {
@@ -330,19 +336,24 @@ header {
 .prices {
     height: 560px;
     background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
 }
 
 .prices-wrapper {
     width: 1222px;
     height: 405px;
-    padding: 40px 109px 115px 109px;
     display: flex;
     justify-content: space-between;
+    padding: 40px;
 }
 
 .prices-first {
     width: 332px;
     height: 391.01px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .prices-title {
@@ -352,6 +363,8 @@ header {
     font-size: 40px;
     line-height: 48px;
     color: #000000;
+    margin-block-end: 0;
+    margin-block-start: 0
 }
 
 .prices-middle {
@@ -385,9 +398,6 @@ header {
 }
 
 .acc-item-title {
-    width: 100px;
-    height: 18px;
-
     font-family: 'Inter';
     font-weight: 700;
     font-size: 20px;
@@ -406,6 +416,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: end;
+    justify-content: space-between;
 }
 
 .prices-second-title {
@@ -417,6 +428,7 @@ header {
     font-size: 40px;
     line-height: 50px;
     text-align: end;
+    margin: 0;
 }
 
 .gardeners {
@@ -426,11 +438,18 @@ header {
 .btn-contact-us {
     width: 162px;
     height: 50px;
+    line-height: 26px;
     border: 1px solid var(--orange);
     border-radius: 5px;
     background-color: #fff;
+
+}
+
+.contact-us-text {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Inika';
     color: var(--orange);
-    margin-bottom: 18px;
 }
 
 .btn-contact-us:hover {
@@ -442,7 +461,7 @@ header {
 .leaves-prices {
     width: 152px;
     height: 175px;
-    margin-top: 18px;
+
 }
 
 /********************CONTACTS************/
@@ -508,10 +527,56 @@ header {
 }
 /********************FOOTER************/
 footer {
+    width: 100%;
     height: 130px;
     background-color: #FFFFFF;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-data {
+    width: 182px;
+    height: 50px;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+   
+}
+
+.copyright {
+    width: 19px;
+    height: 20px;
+    align-self: center;
+    
+}
+
+.footer-year {
+    height: 50px;
+    
+    font-family: 'Inter';
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.github-link {
+    height: 50px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    text-decoration: none;
+
+}
+
+.school-link {
+    height: 50px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #000000;
 }
 
 .social-list-block{
@@ -521,5 +586,14 @@ footer {
 }
 
 .social-list {
-    display: inline;
+    
+    list-style-type: none;
+    width: 188px;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
