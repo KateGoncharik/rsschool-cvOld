@@ -106,9 +106,10 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
 
 .contacts-list {
 	list-style-type: none;
-
+	
 	width: 100%;
 }
+
 
 .contacts-link {
 	text-decoration: none;

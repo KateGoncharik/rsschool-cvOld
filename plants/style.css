@@ -1,0 +1,627 @@
+html {
+    font-family: Inika, Inter;
+    scroll-behavior: smooth;
+}
+
+:root  {
+    --green: #499A18;
+    --orange: #E06733;
+    --light-gray: #717171;
+    --dark-grey: #636060;
+    --Bg-section: #EDF2EC; 
+    --links-nav: #010201;
+    --border-gray: #E3E1D5;
+}
+
+body {
+    width: 1440px;
+    height: 3870px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+/********************HEADER************/
+header {
+    width: 1440px;
+    height: 134px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--Bg-section);
+}
+
+.navbar {
+    width: 1220px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    width: 452px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-list {
+    width: 100%;
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 2px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.nav-list-item {
+    display: inline;
+}
+
+.nav-list-item:hover {
+    border-bottom: 3px solid var(--green);
+    transition: 2s;
+}
+
+.nav-link {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+.current-page {
+    font-weight: 700;
+    color: var(--orange);
+}
+
+
+.logo {
+    width: 79.17px;
+    height: 21.04px;
+}
+
+/********************WELCOME************/
+.welcome {
+    height: 532px;
+    width: 1440px;
+    background-color: var(--Bg-section);
+}
+
+.welcome-inner-section {
+    width: 1222px;
+    height: 407.36px;
+    padding: 62px 109px ;
+    display: flex;
+    justify-content: space-between ;
+}
+
+.leafs {
+    width: 448.8px;
+    height: 407.36px;
+}
+
+.welcome-text-block {
+    width: 549px;
+    height: 340px;
+    padding-top: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.welcome-title {
+    width: 549px;
+    height: 101px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+.btn-learn-more {
+    width: 158px;
+    height: 44px;
+    color: #000000;
+    background: var(--Bg-section);
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.btn-learn-more:hover {
+    color: #ffffff;
+    background-color: var(--orange);
+    transition: 1s;
+}
+
+.welcome-text {
+    width: 525.44px;
+    height: 105px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.plants {
+    color: var(--green);
+}
+/********************ABOUT************/
+.about {
+    background-color: #FFFFFF;
+    width: 1440px;
+    height: 666px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-section {
+    width: 1222px;
+    height: 479px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-text-section {
+    width: 605px;
+    height: 350px;
+    margin-top: 68px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-us-title {
+    width: 463px;
+    height: 102px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: var(--green);
+}
+
+.prof-gard {
+    color: var(--orange);
+}
+
+.about-us-text {
+    
+    width: 605px;
+    height: 208px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.houseplant {
+    width: 464px;
+    height: 479px;
+}
+
+/********************SERVICES************/
+.service {
+    width: 1440px;
+    height: 1300px;
+    background-color: var(--Bg-section); 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.service-wrapper {
+    width: 1222px;
+    height: 1139px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 43px;
+}
+
+.services-content {
+    width: 1007px;
+    height: 94px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-title {
+    width: 306px;
+    height: 94px;
+    
+    font-family: 'Inika';
+    font-size: 40px;
+    line-height: 52px;
+    color: var(--green);
+    
+}
+
+.services-buttons {
+    width: 559px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-btn {
+    width: 161px;
+    height: 50px;
+
+    font-family: 'Inika';
+    font-size: 20px;
+    line-height: 26px;
+    
+    color: var(--orange);
+    background: var(--Bg-section);
+
+    border: 1px solid var(--orange);
+    border-radius: 5px;
+    
+}
+
+.services-btn:hover {
+    color: #ffffff;
+    background-color: var(--orange);
+    transition: 1s;
+}
+
+.services {
+    width: 1222px;
+    height: 955px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+
+.service-item {
+    width: 330px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+} 
+
+.service-item-text-block {
+    width: 330px;
+    height: 100px;
+    border: 1px solid var(--border-gray);
+    border-radius: 0 0 20px 20px;
+}
+
+.service-item-title {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--orange);
+    text-align: center;
+    margin-block-end: 0;
+    margin-block-start: 0.5em;
+}
+
+.service-item-text {
+    text-align: center;
+    
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.services-photo {
+    width: 329px;
+    height: 350px;
+    
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+/********************PRICES************/
+.prices {
+    height: 560px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+}
+
+.prices-wrapper {
+    width: 1222px;
+    height: 405px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.prices-first {
+    width: 332px;
+    height: 391.01px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.prices-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+    margin-block-end: 0;
+    margin-block-start: 0
+}
+
+.prices-middle {
+    width: 332px;
+    height: 282.01px;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prices-accordion {
+    width: 250px;
+    height: 214.01px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.accordion-item {
+    width: 250px;
+    height: 50px;
+    background-color: var(--Bg-section);
+    border: 2px #EDF2EC;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around
+    
+}
+
+.acc-item-title {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    
+}
+
+.acc-dot {
+    width: 16px;
+    height: 16px;
+    padding-top: 8%;
+}
+
+.prices-second {
+    width: 452px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.prices-second-title {
+    width: 452px;
+    height: 103px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: end;
+    margin: 0;
+}
+
+.gardeners {
+    color: var(--green);
+}
+
+.btn-contact-us {
+    width: 162px;
+    height: 50px;
+    line-height: 26px;
+    border: 1px solid var(--orange);
+    border-radius: 5px;
+    background-color: #fff;
+
+}
+
+.contact-us-text {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Inika';
+    color: var(--orange);
+}
+
+.btn-contact-us:hover {
+    color: #ffffff;
+    background-color: var(--orange);
+    transition: 1s;
+}
+
+.leaves-prices {
+    width: 152px;
+    height: 175px;
+
+}
+
+/********************CONTACTS************/
+.contacts {
+    height: 550px;
+    background-color: var(--Bg-section);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-woman {
+    width: 400px;
+    height: 497px;
+    align-self: flex-end;
+
+}
+
+.contacts-title {
+    width: 195px;
+    height: 51px;
+    
+    font-family: 'Inika';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: var(--green);
+}
+
+.contacts-accordion {
+    width: 413px;
+    height: 50px;
+    /* margin-top: -200px; */
+    padding: 0 17px 0 20px;
+
+    background: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* align-self: center; */
+
+
+}
+
+.contacts-city {
+    /* width: 204px;
+    height: 40px; */
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    /* padding-top: 10px; */
+   
+    
+    font-family: 'Inter';
+    font-size: 20px;
+    letter-spacing: 0.05em;
+
+    margin-block-start: 0;
+    margin-block-end: 0; */
+}
+
+.acc-dot-contacts {
+    width: 16px;
+    height: 16px;
+    /* margin-right: 17.5px; */
+    
+}
+/********************FOOTER************/
+footer {
+    width: 100%;
+    height: 130px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    width: 1222px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-data {
+    width: 182px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.copyright {
+    width: 19px;
+    height: 20px;
+    align-self: center;
+    
+}
+
+.footer-year {
+    height: 50px;
+    
+    font-family: 'Inter';
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.github-link {
+    height: 50px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    text-decoration: none;
+
+}
+
+.school-link {
+    height: 50px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.social-list-block{
+    width: 188px;
+    height: 50px;
+    display: inline;
+}
+
+.social-list {
+    
+    list-style-type: none;
+    width: 188px;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
