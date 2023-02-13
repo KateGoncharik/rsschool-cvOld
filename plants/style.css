@@ -230,9 +230,18 @@ header {
     height: 1300px;
     background-color: var(--Bg-section); 
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.service-wrapper {
+    width: 1222px;
+    height: 1139px;
+    display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 43px;
 }
 
 .services-content {
@@ -257,12 +266,13 @@ header {
 .services-buttons {
     width: 559px;
     height: 50px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .services-btn {
     width: 161px;
     height: 50px;
-    margin-right: 19px;
 
     font-family: 'Inika';
     font-size: 20px;
@@ -289,11 +299,15 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: space-between;
 }
+
 
 .service-item {
     width: 330px;
     height: 450px;
+    display: flex;
+    flex-direction: column;
 } 
 
 .service-item-text-block {
@@ -301,9 +315,6 @@ header {
     height: 100px;
     border: 1px solid var(--border-gray);
     border-radius: 0 0 20px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .service-item-title {
@@ -313,6 +324,8 @@ header {
     line-height: 20px;
     color: var(--orange);
     text-align: center;
+    margin-block-end: 0;
+    margin-block-start: 0.5em;
 }
 
 .service-item-text {
@@ -321,7 +334,6 @@ header {
     font-family: 'Inter';
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 36px;
 }
 
 .services-photo {
@@ -482,7 +494,6 @@ header {
 .contacts-title {
     width: 195px;
     height: 51px;
-    margin-top: 60px ;
     
     font-family: 'Inika';
     font-weight: 700;
@@ -492,37 +503,46 @@ header {
 }
 
 .contacts-accordion {
-    width: 450px;
+    width: 413px;
     height: 50px;
-    margin-top: -200px;
+    /* margin-top: -200px; */
+    padding: 0 17px 0 20px;
 
     background: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    align-self: center;
+    /* align-self: center; */
+
 
 }
 
 .contacts-city {
-    width: 204px;
-    height: 40px;
-    padding-top: 10px;
+    /* width: 204px;
+    height: 40px; */
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    /* padding-top: 10px; */
    
     
     font-family: 'Inter';
     font-size: 20px;
     letter-spacing: 0.05em;
-    text-align: justify;
 
     margin-block-start: 0;
-    margin-block-end: 0;
+    margin-block-end: 0; */
 }
 
 .acc-dot-contacts {
     width: 16px;
     height: 16px;
-    margin-right: 17.5px;
+    /* margin-right: 17.5px; */
     
 }
 /********************FOOTER************/
@@ -531,7 +551,15 @@ footer {
     height: 130px;
     background-color: #FFFFFF;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    width: 1222px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
