@@ -24,6 +24,7 @@
 // }
 
 
+
 // const counter = new Counter();
 // span.innerHTML = counter.count; // значение высчитываемое в методе объекта будет равно значению  внутренностей спана
 

@@ -30,3 +30,47 @@ function toggleMenu() {
   }
   
   hamburger.addEventListener("click", toggleMenu);
+
+
+  const firstPhoto = document.querySelector('.for-exp1');
+  const secondPhoto = document.querySelector('.for-exp2');
+  const thirdPhoto = document.querySelector('.for-exp3');
+
+//убрала классы разные для фото - не будет работать блюр
+  function blurEffect() {
+      secondPhoto.classList.toggle('blur');
+      thirdPhoto.classList.toggle('blur');
+  
+  };
+
+  firstPhoto.addEventListener('click', blurEffect);
+
+
+  // const btnContainer = document.querySelector('.btn-wrapper')
+  // const btns = btnContainer.getElementsByClassName('.btn-for-photo')
+
+  // for (let i = 0; i < btns.length; i++) {
+  //   btns[i].addEventListener('click', function() {
+  //     let current = document.getElementsByClassName('active');
+  //     if (current.length > 0) {
+  //       current[0].className = current[0].className.replace('active', "");
+  //     }
+      
+  //     this.className += 'active';
+  //   })
+  // }
+
+  const btns = document.querySelectorAll('.btn-for-photo');
+  const photos = document.querySelectorAll('for-exp');
+
+  function activeButton () {
+    if (this.classList.contains('active')) {
+      this.classList.remove('active');
+    }
+   this.classList.add(' active');
+  }
+
+  btns.forEach(function(element) {
+   element.addEventListener('click', activeButton);
+  }
+  );

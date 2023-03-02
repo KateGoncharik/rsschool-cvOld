@@ -395,6 +395,34 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
 	width:80%;
 }
 
+/*****************************/
+.for-exp {
+	width: 20%;
+	/* filter: blur(1px); */
+}
+
+
+.blur {
+	filter: blur(2px);
+}
+.active {
+	border: 2px groove pink;
+	background-color: black;
+}
+
+.btn-wrapper {
+	margin: 0 auto;
+	width: 50%;
+	border: 1px solid grey;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+/* .for-exp:hover {
+	filter: blur(0px)
+} */
+
 
 @media (max-width: 760px) {
 	.greeting-title {
