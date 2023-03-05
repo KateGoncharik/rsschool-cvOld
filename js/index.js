@@ -32,18 +32,18 @@ function toggleMenu() {
   hamburger.addEventListener("click", toggleMenu);
 
 
-  const firstPhoto = document.querySelector('.for-exp1');
-  const secondPhoto = document.querySelector('.for-exp2');
-  const thirdPhoto = document.querySelector('.for-exp3');
+  // const firstPhoto = document.querySelector('.for-exp1');
+  // const secondPhoto = document.querySelector('.for-exp2');
+  // const thirdPhoto = document.querySelector('.for-exp3');
 
 //убрала классы разные для фото - не будет работать блюр
-  function blurEffect() {
-      secondPhoto.classList.toggle('blur');
-      thirdPhoto.classList.toggle('blur');
+  // function blurEffect() {
+  //     secondPhoto.classList.toggle('blur');
+  //     thirdPhoto.classList.toggle('blur');
   
-  };
+  // };
 
-  firstPhoto.addEventListener('click', blurEffect);
+  // firstPhoto.addEventListener('click', blurEffect);
 
 
   // const btnContainer = document.querySelector('.btn-wrapper')
@@ -60,17 +60,44 @@ function toggleMenu() {
   //   })
   // }
 
-  const btns = document.querySelectorAll('.btn-for-photo');
-  const photos = document.querySelectorAll('for-exp');
+  const btnWrapper = document.querySelector('.btn-wrapper')
+  const buttons = document.querySelectorAll('div.btn-wrapper button')
+  const photos = document.querySelectorAll('.for-exp');
+
+  const firstButton = document.getElementById('first-button')
+  const secondButton = document.getElementById('second-button')
+  const thirdButton = document.getElementById('third-button')
+
+  //buttons (with active class?) in btn-wrapper
+  //how to check how many buttons are active?  by collection! but how..? ok
+  // do we need to know that? yeah, it is condition
+  //buttons with active class can't be found? can be - but when they are initialized
+
+
 
   function activeButton () {
+    let activeButtons = document.querySelectorAll('.active')
     if (this.classList.contains('active')) {
       this.classList.remove('active');
+    } else {
+      if (activeButtons.length < 2) {
+        this.classList.add('active');
+      }
     }
-   this.classList.add(' active');
   }
+  
 
-  btns.forEach(function(element) {
-   element.addEventListener('click', activeButton);
-  }
+  buttons.forEach(function(element) {
+      element.addEventListener('click', activeButton);
+    }
   );
+
+
+//  function blurEffect(photos) {
+//     if (firstButton.classList.contains('active')) {
+//       photos[0].classList.add('blur');
+//     }
+//   };
+//   blurEffect(photos);
+
+  //how to connect this two massives?

@@ -19,7 +19,7 @@ body {
 	display: flex;
 	flex-direction: column;
 
-	width: 80%;
+	width: 80%;	
 
 	font-family: Arial, sans-serif;
 	font-size: 1rem;
@@ -396,18 +396,38 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
 }
 
 /*****************************/
+
+.blur-block {
+	/* width: 70%; */
+	/* margin: 0 auto; */
+	background-color: #717687;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-around;
+}
+
+.photo-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
 .for-exp {
 	width: 20%;
 	/* filter: blur(1px); */
 }
 
+.btn-for-photo {
+	width: 50px;
+	padding: 15px;
+}
 
 .blur {
 	filter: blur(2px);
 }
 .active {
 	border: 2px groove pink;
-	background-color: black;
+	background-color: rgb(184, 120, 120);
 }
 
 .btn-wrapper {
