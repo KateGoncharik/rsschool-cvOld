@@ -1,5 +1,7 @@
 function btnClick() {
-    document.querySelector(".btn-for-fun").hidden = true;
+    document.querySelector(".btn-for-fun").innerHTML = "Catch me, if you can!";
+    document.querySelector(".btn-for-fun").classList.add("run-away");
+
 };
 
 const btn = document.querySelector(".btn-for-fun");
@@ -77,13 +79,16 @@ function toggleMenu() {
 
   function activeButton () {
     let activeButtons = document.querySelectorAll('.active')
+    
     if (this.classList.contains('active')) {
       this.classList.remove('active');
     } else {
       if (activeButtons.length < 2) {
         this.classList.add('active');
+        console.log(activeButtons)
       }
     }
+    // console.log(activeButtons)
   }
   
 
@@ -101,3 +106,23 @@ function toggleMenu() {
 //   blurEffect(photos);
 
   //how to connect this two massives?
+  //we can't do this by collection of active buttons - because elements in it will not be sorted by index;
+
+  //we can make stupid ifs, like "
+  // if (firstButton.classList.contain('active')) {
+  //  secondPhoto.classList.add("blur") && thirdPhoto.classList.add("blur")
+  // }
+  //  if (secondButton.classList.contain('active')) {
+  //  firstPhoto.classList.add("blur") && thirdPhoto.classList.add("blur")
+  // }
+  // if (thirdButton.classList.contain('active')) {
+  //  firstPhoto.classList.add("blur") && secondPhoto.classList.add("blur")
+  // }
+  // "
+
+  // but we have a problem - because this conditions will have conflicts!
+  // 
+
+  //andrey said that we can do it easily:
+  //we give each button and photo classes, we do map() we check if there is some specific button in activeButtons collection - so we can tell 
+  // that if any button is not in this collection - its photo should be blurred

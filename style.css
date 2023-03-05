@@ -344,7 +344,14 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
 .btn-for-fun {
 	width: 30%;
 	height: 70px;
-	background-color: #8f1b93;
+	background-color: #8f1b93;	
+	color: #fff;
+	font-size: 20px;
+}
+
+.run-away {
+	transform: translate(0px, -15000px);
+	transition: 20s;
 }
 
 .menu {
@@ -398,13 +405,15 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
 /*****************************/
 
 .blur-block {
-	/* width: 70%; */
-	/* margin: 0 auto; */
-	background-color: #717687;
+	margin-bottom: 20px;
+
+	background-color: #8a91bf;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: space-around;
+
+	border-radius: 10%;
 }
 
 .photo-wrapper {
@@ -414,6 +423,7 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
 
 .for-exp {
 	width: 20%;
+	border-radius: 10%;
 	/* filter: blur(1px); */
 }
 
@@ -437,6 +447,8 @@ a:hover { text-decoration: underline; transition: text-decoration .3s; }
 	display: flex;
 	justify-content: space-around;
 }
+
+
 
 
 /* .for-exp:hover {
