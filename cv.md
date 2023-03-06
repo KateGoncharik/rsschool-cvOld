@@ -3,6 +3,6 @@
 ##I'm studying coding and programming for half-a-year now.
 *Speaking of my personal qualities:
     * I have a *good memory*
-    * I have a plenty of **time** for studying
+    * I have a plenty of time for studying HELLO
 
 ###Here is my [github]( https://github.com/KateGoncharik)
