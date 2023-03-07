@@ -12,10 +12,11 @@
 
 ************                        
 ### Who am I?
-    I'm 20 year-old-girl from Minsk, Belarus. Whole my life I've been studying art: dancing, painting, singing, plaing piano.. I am fond of literature! 
- 
-    But now is the time for me to try something completely different.. 
-    So here I am a student of RS School. I have a year to become a junior frontend developer.
+
+  I'm 20 year-old-girl from Minsk, Belarus. Whole my life I've been studying art: dancing, painting, singing, plaing piano.. I am fond of literature! 
+
+  But now is the time for me to try something completely different.. 
+  So here I am a student of RS School. I have a year to become a junior frontend developer.
 
 *  Speaking of my personal qualities.. the are following:
     * *Good memory*
@@ -25,11 +26,11 @@
     * Eager to become a good programmer    
     
  ## My education  
-  I've been studying on Dmitry Valok's online-corse [here](https://brainscloud.ru/landing/html-css)
+1. I've been studying on Dmitry Valok's online-corse [here](https://brainscloud.ru/landing/html-css)
 
-  JavaScript Manual on learnjavascript.ru (in progress)
-    
-  Joined in the middle of RS School stage [#0](https://rs.school/js-stage0/). Made half of the tasks.
+2. JavaScript Manual on learnjavascript.ru (in progress)
+  
+3. Joined in the middle of RS School stage [#0](https://rs.school/js-stage0/). Made half of the tasks.
 
 ## Books I've read
  1. Learning Web Design, 5th Edition (_by Jennifer Robbins_)
@@ -43,7 +44,8 @@
       [<img src="img/algorithms.jfif" alt="algorithms" width="150">](https://www.oreilly.com/library/view/grokking-algorithms/9781617292231/)
 
  ## Languages I use
-    I freely speak 3 languages: Russian (native), Belarussian (native), English (B2).
+
+  I freely speak 3 languages: Russian (native), Belarussian (native), English (B2).
 
 ##  What I know for now:
 
@@ -67,5 +69,5 @@ _Your task is to add a new property usersAnswer to every object in the array que
 ```
 ## Project I started with:
 
-My first web-site - [Cat-page](https://kategoncharik.github.io/cat-page/).
+My first web-site - [**Cat-page**](https://kategoncharik.github.io/cat-page/).
 
